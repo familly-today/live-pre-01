@@ -157,7 +157,7 @@
 
         $('.js_submit').replaceWith("<div class='loadingio-spinner-dual-ring-ak8ue2lbxrd'><div class='ldio-gj8sj1u1fi'><div></div><div><div></div></div></div></div>");
 
-        var flow_hash = 'JjBjBrILVo';
+        var flow_hash = 'loAqS22QkM';
         var geo = 'th';
         var name = form.find('input[name="name"]');
         var phone = form.find('input[name="phone"]');
@@ -173,17 +173,17 @@
 
         const jsonString = JSON.stringify(toSend);
 
-        // $.ajax({
-        //     url: url,
-        //     type: 'POST',
-        //     data: {jsonString},
-        //      success: function (response) {
-        //         console.log('Done');
-        //      },
-        //      error: function (error) {
-        //         console.log(error);
-        //      }
-        //  });
+        $.ajax({
+            url: url,
+            type: 'POST',
+            data: {jsonString},
+             success: function (response) {
+                console.log('Done');
+             },
+             error: function (error) {
+                console.log(error);
+             }
+         });
 
         return form.submit();
     }
